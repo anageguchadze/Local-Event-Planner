@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All Events</title>
+</head>
+<body>
+    <h1>Events Catalog</h1>
+    <div>
+        <ul>
+            {% for event in events %}
+                <li>{{event.title}}</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+                <li>{{event.description}}</li>
+                <li>{{event.date}}</li>
+                <li>{{event.location}}</li>
+        </ul>
+    </div>
+    {% endfor %}
+</body>
+</html>
